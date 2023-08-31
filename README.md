@@ -56,6 +56,30 @@ Our dataset is large so Hierarchical clustering is not well suited for analysis.
 
 During the process of building a KMeans model, it's essential to specify the number of clusters beforehand. To determine the most appropriate number of clusters, various methods like silhouette analysis and the elbow method can be utilized. These techniques aid in selecting the optimal number of clusters that best represents the inherent structure of the data.
 </br>
+
+**[Elbow Method](https://www.statology.org/elbow-method-in-python/)**</br>
+One of the most common ways to choose a value for K is known as the elbow method, which involves creating a plot with the number of clusters on the x-axis and the total within sum of squares on the y-axis and then identifying where an “elbow” or bend appears in the plot.</br>
+
+The point on the x-axis where the “elbow” occurs tells us the optimal number of clusters to use in the k-means clustering algorithm.
+![image](https://github.com/senadnmzky/RFM-Customer-Segmentation/assets/56525534/688eb1a9-61cb-4c07-8023-dce20cff8cd3)
+
+As we analyze the graph depicting the sum of squared errors for various values of K, it's evident that the error tends to decrease with the increasing number of clusters. However, upon closer examination, when K reaches around 4 or 5, the rate of error reduction becomes notably steeper. This implies that by adding more clusters, the reduction in error becomes marginal compared to the increment in cluster count.</br>
+
+Each cluster in this context corresponds to a distinct customer segment. Implementing tailored policies for each of these segments requires additional resources and planning. As the number of clusters rises, the organization incurs extra costs to devise and execute individualized strategies for each segment.</br>
+
+Hence, while it's tempting to consider a higher number of clusters to capture finer details in customer behavior, this can lead to diminishing returns in terms of error reduction and increased operational complexity. Striking a balance is crucial, and in this case, opting for K=4 appears reasonable. This choice offers a good compromise between reducing errors through segmentation and managing the practicality of implementing policies for the distinct customer groups.</br>
+
+[Silhouette Coefficient](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html)</br>
+The overall silhouette score for a clustering can be computed by taking the average silhouette coefficient across all data points. This score provides insight into how well the data is clustered and whether the chosen number of clusters is appropriate. Higher silhouette scores indicate better-defined clusters.
+**Outcomes by Elbow method and Silhoutte score**</br>
+
+Based on the results obtained, selecting the ***highest silhouette score*** suggests that there could be ***two*** distinct clusters. On the other hand, choosing the ***lowest elbow squared error*** indicates that there might be around ***ten*** clusters. </br>
+
+As a result, in order to determine the most suitable number of clusters based on graphics, it is necessary to carefully consider the outcomes, and it appears that opting for a solution with ***four different cluster groups*** could be a ***balanced approach***. </br>
+
+**K=4 have optimal score. Let's visualize these clusters.** </br>
+
+
 | | **Recency** |**Frequency**|**Monetary**|
 |:--------:|:--------:|:--------:|:--------:|
 |**Cluster**| | ||

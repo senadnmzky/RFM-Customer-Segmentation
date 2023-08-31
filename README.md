@@ -48,6 +48,8 @@ Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture 
 **CONCLUSION**
 
 ***K_Means Clustering Outcomes***
+</br>
+
 Clustering is an unsupervised machine learning technique used to uncover underlying groups within data. One common approach for this is the K-means clustering algorithm, which is frequently employed to identify distinct segments within a customer dataset.
 
 Our dataset is large so Hierarchical clustering is not well suited for analysis.
@@ -76,6 +78,8 @@ During the process of building a KMeans model, it's essential to specify the num
 </br>
 
 ***DBSCAN (Density-Based Spatial Clustering of Applications with Noise) Clustering Outcomes***
+</br>
+
 K-Means and Hierarchical Clustering struggle with creating clusters of complex shapes and adapting to varying densities. In contrast, DBSCAN excels by grouping densely packed data points into clusters and effectively identifying clusters in large spatial datasets based on local density.
 The most exciting feature of DBSCAN clustering is that it is robust to outliers.
 </br>
@@ -97,6 +101,8 @@ The most exciting feature of DBSCAN clustering is that it is robust to outliers.
 </br>
 
 ***Gaussian Mixture Model(GMM) Outcomes***
+</br>
+
 Gaussian Mixture Models is a statistical model that represents data as a combination of multiple Gaussian distributions. It assumes that the data is generated from a mix of these distributions, each characterized by its own average, spread, and weight. GMMs are used for tasks like clustering and data modeling. They assign probabilities to data points belonging to each Gaussian component and find the best parameters through the Expectation-Maximization (EM) algorithm. This makes GMMs valuable for understanding complex datasets with hidden patterns or clusters.
 </br>
 

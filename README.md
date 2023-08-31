@@ -70,7 +70,7 @@ Each cluster in this context corresponds to a distinct customer segment. Impleme
 Hence, while it's tempting to consider a higher number of clusters to capture finer details in customer behavior, this can lead to diminishing returns in terms of error reduction and increased operational complexity. Striking a balance is crucial, and in this case, opting for K=4 appears reasonable. This choice offers a good compromise between reducing errors through segmentation and managing the practicality of implementing policies for the distinct customer groups.</br>
 
 [Silhouette Coefficient](https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html)</br>
-The overall silhouette score for a clustering can be computed by taking the average silhouette coefficient across all data points. This score provides insight into how well the data is clustered and whether the chosen number of clusters is appropriate. Higher silhouette scores indicate better-defined clusters.
+The overall silhouette score for a clustering can be computed by taking the average silhouette coefficient across all data points. This score provides insight into how well the data is clustered and whether the chosen number of clusters is appropriate. Higher silhouette scores indicate better-defined clusters.</br>
 ![image](https://github.com/senadnmzky/RFM-Customer-Segmentation/assets/56525534/e4e07573-3050-4e07-a2dd-2fb50e05d339)
 
 

@@ -46,6 +46,19 @@ Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture 
 <br>
 
 **CONCLUSION**
+
+***K_Means Clustering Outcomes***
+|** **| **Recency** |**Frequency**|**Monetary**|
+|:--------:|:--------:|:--------:|:--------:|
+|**Cluster**| | ||
+|0|Last bought while ago and less frequent and spend the most|Risky Customers||
+|1|Bought most recently and most often, and spend the most|Best Customers||
+|2|Bought long time ago and least frequency and monetary|Churned Customer||
+|3|Bought long time ago and least frequency and monetary|Churned Customer||
+</br>
+
+
+
 |**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
 |:--------:|:--------:|:--------:|
 |0|Bought most recently but low frequency and monetary|New Customers|

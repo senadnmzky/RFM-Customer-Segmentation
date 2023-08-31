@@ -90,7 +90,7 @@ The most exciting feature of DBSCAN clustering is that it is robust to outliers.
 
 |**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
 |:--------:|:--------:|:--------:|
-|-1|Bought most recently and most often, and spend the most|Best Customers|
+|(-1)|Bought most recently and most often, and spend the most|Best Customers|
 |0|Last bought while ago and less frequent and spend the most|Risky Customers|
 |1|Bought long time ago and least frequency and monetary|Churned Customer|
 </br>
@@ -102,7 +102,7 @@ Gaussian Mixture Models is a statistical model that represents data as a combina
 
 | | **Recency** |**Frequency**|**Monetary**|
 |:--------:|:--------:|:--------:|:--------:|
-|**Cluster**| | ||
+|**Cluster**| | | |
 |0|8|260|8141|
 |1|185|24|926|
 |2|34|91|701|

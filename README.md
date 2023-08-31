@@ -81,12 +81,13 @@ The most exciting feature of DBSCAN clustering is that it is robust to outliers.
 </br>
 | | **Recency** |**Frequency**|**Monetary**|
 |:--------:|:--------:|:--------:|:--------:|
-|**Cluster**| | ||
+|**Cluster**| | | |
 |-1|61|396|21853|
 |0|91|82|1420|
 |1|245|1|203|
 </br>
 </br>
+
 |**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
 |:--------:|:--------:|:--------:|
 |-1|Bought most recently and most often, and spend the most|Best Customers|
@@ -94,7 +95,7 @@ The most exciting feature of DBSCAN clustering is that it is robust to outliers.
 |1|Bought long time ago and least frequency and monetary|Churned Customer|
 </br>
 </br>
-</br>
+
 ***Gaussian Mixture Model(GMM) Outcomes***
 Gaussian Mixture Models is a statistical model that represents data as a combination of multiple Gaussian distributions. It assumes that the data is generated from a mix of these distributions, each characterized by its own average, spread, and weight. GMMs are used for tasks like clustering and data modeling. They assign probabilities to data points belonging to each Gaussian component and find the best parameters through the Expectation-Maximization (EM) algorithm. This makes GMMs valuable for understanding complex datasets with hidden patterns or clusters.
 </br>

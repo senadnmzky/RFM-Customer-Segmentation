@@ -48,15 +48,21 @@ Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture 
 **CONCLUSION**
 
 ***K_Means Clustering Outcomes***
-|** **| **Recency** |**Frequency**|**Monetary**|
+Clustering is an unsupervised machine learning technique used to uncover underlying groups within data. One common approach for this is the K-means clustering algorithm, which is frequently employed to identify distinct segments within a customer dataset.
+
+Our dataset is large so Hierarchical clustering is not well suited for analysis.
+
+During the process of building a KMeans model, it's essential to specify the number of clusters beforehand. To determine the most appropriate number of clusters, various methods like silhouette analysis and the elbow method can be utilized. These techniques aid in selecting the optimal number of clusters that best represents the inherent structure of the data.
+</br>
+| | **Recency** |**Frequency**|**Monetary**|
 |:--------:|:--------:|:--------:|:--------:|
 |**Cluster**| | ||
-|0|Last bought while ago and less frequent and spend the most|Risky Customers||
-|1|Bought most recently and most often, and spend the most|Best Customers||
-|2|Bought long time ago and least frequency and monetary|Churned Customer||
-|3|Bought long time ago and least frequency and monetary|Churned Customer||
+|0|6|203|3823|
+|1|70|66|1137|
+|2|144|10|226|
+|3|13|30|480|
 </br>
-
+</br>
 
 
 |**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
@@ -66,3 +72,46 @@ Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture 
 |2|Bought most recently and most often, and spend the most|Best Customers|
 |3|Bought long time ago and least frequency and monetary|Churned Customer|
 </br>
+</br>
+</br>
+
+***DBSCAN (Density-Based Spatial Clustering of Applications with Noise) Clustering Outcomes***
+K-Means and Hierarchical Clustering struggle with creating clusters of complex shapes and adapting to varying densities. In contrast, DBSCAN excels by grouping densely packed data points into clusters and effectively identifying clusters in large spatial datasets based on local density.
+The most exciting feature of DBSCAN clustering is that it is robust to outliers.
+</br>
+| | **Recency** |**Frequency**|**Monetary**|
+|:--------:|:--------:|:--------:|:--------:|
+|**Cluster**| | ||
+|-1|61|396|21853|
+|0|91|82|1420|
+|1|245|1|203|
+</br>
+</br>
+|**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
+|:--------:|:--------:|:--------:|
+|-1|Bought most recently and most often, and spend the most|Best Customers|
+|0|Last bought while ago and less frequent and spend the most|Risky Customers|
+|1|Bought long time ago and least frequency and monetary|Churned Customer|
+</br>
+</br>
+</br>
+***Gaussian Mixture Model(GMM) Outcomes***
+Gaussian Mixture Models is a statistical model that represents data as a combination of multiple Gaussian distributions. It assumes that the data is generated from a mix of these distributions, each characterized by its own average, spread, and weight. GMMs are used for tasks like clustering and data modeling. They assign probabilities to data points belonging to each Gaussian component and find the best parameters through the Expectation-Maximization (EM) algorithm. This makes GMMs valuable for understanding complex datasets with hidden patterns or clusters.
+</br>
+
+| | **Recency** |**Frequency**|**Monetary**|
+|:--------:|:--------:|:--------:|:--------:|
+|**Cluster**| | ||
+|0|8|260|8141|
+|1|185|24|926|
+|2|34|91|701|
+|3|111|64|1240|
+</br>
+</br>
+
+|**Cluster Number**| **RFM Decoding Customer Value** |**Type of Customer**|
+|:--------:|:--------:|:--------:|
+|0|Bought most recently and most often, and spend the most|Best Customers|
+|1|Bought long time ago and least frequency and monetary|Churned Customer|
+|2|Bought most recently but low frequency and monetary|New Customers|
+|3|Last bought while ago and less frequent and spend the most|Risky Customers|

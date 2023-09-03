@@ -1,8 +1,9 @@
 # RFM-Customer-Segmentation
 This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. 
 <br>Dataset source: http://archive.ics.uci.edu/dataset/352/online+retail
+<br>
 Feature Information:
-
+<br>
 **InvoiceNo**: Invoice number. *Nominal*, a 6-digit integral number uniquely assigned to each transaction. If this code starts with letter 'c', it indicates a cancellation. 
 <br>
 **StockCode**: Product (item) code. *Nominal*, a 5-digit integral number uniquely assigned to each distinct product.
@@ -23,12 +24,13 @@ Feature Information:
 
 **RFM**: Recency, Frequency and Monetary
 To prepare the data for RFM analysis, conduct exploratory data analysis (EDA) and data visualization to observe data structure and missing values. Perform descriptive analysis to understand feature relationships, clear noise, and address missing values in the dataset, making it ready for RFM analysis. Analyze distribution of Orders, Customers, and Countries before RFM analysis to inform sales policies and resource utilization.
-
+<br>
 Focus on UK transactions for RFM Analysis, Customer Segmentation, and K-Means Clustering due to its highest sales revenue and customer count. Use RFM Analysis, a customer segmentation technique based on past purchasing behavior, to develop targeted approaches for better customer understanding, trend observation, and increased retention and sales. Calculate Recency, Frequency, and Monetary values for UK transactions to create an RFM table.
-
+<br>
 In the Customer Segmentation section, create an RFM Segmentation Table to categorize customers based on their RFM values (e.g., "Big Spenders," "Lost Customer").
-
+<br>
 Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture Clustering algorithm results to evaluate its effectiveness in customer clustering. Preprocess data for K-Means Clustering, including examining feature correlations, distributions, and normalizing the data. Determine the optimal number of clusters using the Elbow method and Silhouette Analysis. Visualize cluster distribution using a scatter plot and interpret results using boxplots.
+<br>
 # Project Structures
 -Data Cleaning & Feature Engineering
 <br>
@@ -46,7 +48,7 @@ Compare manual customer segmentation with K-Means, DBSCAN, and Gaussian Mixture 
 <br>
 
 **CONCLUSION**
-
+<br>
 ***K_Means Clustering Outcomes***
 </br>
 
